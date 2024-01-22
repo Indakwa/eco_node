@@ -21,7 +21,7 @@ const How = () => {
             <div className="how-txt">
                 <h6>1. Sign Up</h6>
                 <p>
-                    Get started by creating an account on Eco-Node. Simply click on the "Sign Up" button and fill in your basic details. This will create your account and set you on the path to earning Climate Action Tokens.
+                    Get started by creating an account on Eco-Node. Simply click on the "Sign Up" button and fill in your basic details. This will create your account and set you on the path to earning Carbon Credits.
                 </p>
 
                 <h6>2. Explore Actions</h6>
@@ -31,12 +31,12 @@ const How = () => {
 
                 <h6>3. Track Your Carbon Footprint</h6>
                 <p>
-                    Measure your environmental impact by tracking your carbon footprint. Use our intuitive tools to input basic data and discover ways to reduce your carbon emissions. The more actions you complete, the more tokens you earn
+                    Measure your environmental impact by tracking your carbon footprint. Use our intuitive tools to input basic data and discover ways to reduce your carbon emissions. The more actions you complete, the more credits you earn.
                 </p>
 
-                <h6>4. Earn Climate Action Tokens</h6>
+                <h6>4. Earn Carbon Credits</h6>
                 <p>
-                    As you complete eco-friendly actions and contribute to community challenges, you'll accumulate Climate Action Tokens in your wallet. These tokens represent your positive contributions to a sustainable future.
+                    As you complete eco-friendly actions and contribute to community challenges, you'll accumulate Carbon Credits in your wallet. These Carbon Credits represent your positive contributions to a sustainable future.
                 </p>
             </div>
         </div>

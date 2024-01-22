@@ -21,7 +21,7 @@ const VideoBackground = () => {
         <div className="inner-content">
             <h1>Eco-Node</h1>
             <p className='txt'>
-                Empowering you to take control of your carbon footprint. Eco-Node rewards your eco-friendly choices with Climate Action Tokens. Explore a platform where environmental impact meets tangible benefits. Start earning tokens for a better tomorrow.
+                Empowering you to take control of your carbon footprint. Eco-Node rewards your eco-friendly choices with Carbon Credits. Explore a platform where environmental impact meets tangible benefits. Start earning Carbon Credits for a better tomorrow.
             </p>
             <Link to="/how" className='CTA'>How it works</Link>
             <Link to="/register" className='CTA btn2'>Get Started</Link>
