@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { CgArrowTopRight } from "react-icons/cg";
 import Chart from '../components/Chart'
 import Circular from '../components/Circular'
+import MobNav from '../components/MobNav';
 
 const Dash = () => {
     const goalProgress = 60;
@@ -11,6 +12,7 @@ const Dash = () => {
   return (
     <section className='dash'>
         <Header />
+        <MobNav />
 
         <div className="dash-container">
             <h2>Dashboard Overview</h2>

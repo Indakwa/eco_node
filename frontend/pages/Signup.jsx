@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import logVid from '../assets/vids/2.mp4'
 import { useNavigate } from 'react-router-dom';
+import MobNav from '../components/MobNav';
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -16,6 +17,7 @@ const Signup = () => {
   return (
     <section className="signup-section">
         <Header />
+        <MobNav />
 
         <div className="inner-signup">
             <div className="signup-form">

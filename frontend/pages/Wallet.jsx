@@ -3,11 +3,13 @@ import Header from '../components/Header'
 import Table from '../components/Table'
 import { Link } from 'react-router-dom';
 import { CgArrowTopRight } from "react-icons/cg";
+import MobNav from '../components/MobNav';
 
 const Wallet = () => {
   return (
     <section className='wallet'>
         <Header />
+        <MobNav />
 
         <div className="wallet-container">
             <div className="top">

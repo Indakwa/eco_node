@@ -1,0 +1,84 @@
+.mobile-header{
+    width: 90vw;
+    margin: 0 auto;
+    height: 50px;
+    margin-top: 1rem;
+
+    .logoDiv{
+        #logo{
+            font-size: 1rem;
+            letter-spacing: 1.4px;
+            position: relative;
+            font-family: $orb;
+        }
+    }
+
+    .hamburger {
+        position: relative;
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+        z-index: 6;
+    }
+    
+    .hamburger .bar, .hamburger:after, .hamburger:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $whi;
+        margin: 6px 0px;
+        transition: 0.5s;
+    }
+    
+    .hamburger.is-active:before {
+        transform: rotate(-45deg) translate(-6px, 7px);
+    }
+    
+    .hamburger.is-active:after {
+        transform: rotate(45deg) translate(-4px, -5px);
+    }
+    
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+    
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        min-height: 100vh;
+        display: block;
+        z-index: 5;
+        background-color: #000;
+        padding-top: 100px;
+        transition: 0.5s;
+        
+
+        ul{
+
+            li{
+                list-style-type: none;
+                text-align: center;
+                margin-bottom: 1.4rem;
+                position: relative;
+
+                .link{
+                    color: $whi;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .mobile-nav.is-active {
+        left: 0;
+    }
+
+}

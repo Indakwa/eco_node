@@ -1,0 +1,398 @@
+@media screen and (max-width: 400px){
+    .desktop-header{
+        display: none;
+    }
+
+    .mobile-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .inner-content{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 6rem;
+    
+        h1{
+            font-size: 3.5rem;
+            font-family: $orb;
+            text-align: center;
+        }
+    
+        .txt{
+            font-size: .8rem;
+            text-align: center;
+            width: 98%;
+            margin: 0 auto;
+        }
+    
+        .CTA{
+            display: block;
+            text-align: center;
+            width: 60%;
+            margin: 0 auto;
+            min-width: 50px;
+            padding: .8rem;
+            color: $whi;
+            text-decoration: none;
+            border: 2px solid $whi;
+            border-radius: 30px;
+            margin-top: 2rem;
+            font-weight: 600;
+            font-size: .8rem;
+    
+            &:hover{
+                transform: scale(1.06);
+            }
+        }
+    
+    }
+    
+
+    .signup-section, .how-section{
+        background: #000;
+        min-height: 100vh;  
+        height: auto;
+        overflow: hidden;
+    
+        .inner-signup, .inner-how{
+            border-top: 1px solid #ececec91;
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+        
+            .signup-form{
+                width: 100%;
+                border-right: none;
+    
+                h2{
+                    font-size: 1.5rem;  
+                    width: 90%;
+                    margin: 0 auto;
+                    margin-top: 1rem;
+                }
+        
+                form{
+                    //border: $b;
+                    width: 90%;
+                    margin: 0 auto;
+    
+                    margin-top: 1.4rem;
+    
+                    label{
+                        font-size: .8rem;
+                    }
+        
+                    input{
+                        display: block;
+                        width: 96%;
+                        font-size: .8rem;
+                        padding: .8rem;
+                        background-color: #121212;
+                        outline: none;
+                        border: none;
+                        color: $whi;
+                        border-radius: 5px;
+                        margin-bottom: 1.5rem;
+                            
+                        &:focus{
+                            outline: none;
+                            border: .5px solid #ececec75; 
+                            
+                        }
+                    }
+        
+                    .submit{
+                        display: block;
+                        width: 96%;
+                        background: $green;
+                        color: $bla;
+                        outline: none;
+                        border: none;
+                        padding: .8rem;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        border-radius: 5px;
+                        position: relative;
+                        top: .8rem;
+        
+                        &:hover{
+                            outline: none;
+                            border: none;
+                            transform: scale(1.02);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        
+            .signup-video, .how-video{
+                display: none;
+            }
+    
+            .how-txt{
+                border-left: none;
+                width: 100%;
+                padding: 2rem 2rem 3rem 1rem;
+                h6{
+                    font-size: 1.1rem;
+                    font-family: $orb;
+                    margin-bottom: .2rem;
+                }
+    
+                p{
+                    font-size: .8rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+    
+        }
+    }
+
+
+
+    .dash{
+        min-height: 100vh;
+        height: auto;
+        border: 1px solid rgba(0, 0, 0, 0);
+        padding-bottom: 2rem;
+    
+        .dash-container{
+            //border: $b2;
+            width: 90vw;
+            margin: 0 auto;
+            margin-top: 2rem;
+    
+            .top-cards{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 1rem;
+                //padding: .6rem;
+                .card{
+                    width: 100%;
+                    background: #33333392;
+                    padding: 1rem;
+                    border-radius: 5px;
+    
+                    .top-txt{
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                            font-size: .6rem;
+                            font-weight: 500;
+                        }
+                        .CTA{
+                            color: $green;
+                            text-decoration: none;
+                            font-size: .6rem;
+                            //font-weight: 600;
+    
+                            .icon{
+                                font-size: .8rem;
+                                position: relative;
+                                top: .2rem;
+                            }
+                        }
+                    }
+    
+                    .bottom-txt{
+                        font-family: $orb;
+                        font-size: 1.4rem;
+                        letter-spacing: 2px;
+                        margin-top: .3rem;
+                    }
+                }
+            }
+    
+            .mid{
+                margin-top: 1.6rem;
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+                flex-direction: column;
+    
+                .left-chart{
+                    width: 100%;
+                    max-width: 322px;
+                    border-radius: 5px;
+                    overflow-x: auto;
+                }
+    
+                .right-chart{
+                    width: 100%;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    padding-top: 2rem;
+                    background: #33333392;
+                    padding-bottom: 2rem;
+
+    
+                    .circular{
+                        font-family: $orb;
+                    }
+    
+                    h5{
+                        text-align: center;
+                        margin-top: 2.2rem;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        font-family: $orb;
+                    }
+    
+                    p{
+                        text-align: center;
+                        margin-top: .3rem;
+                        color: $green;
+                        font-size: .8rem;
+                    }
+    
+                    #complete{
+                        color: $whi;
+                        font-size: .6rem;
+                    }
+                }
+    
+            }
+        }
+    }
+
+
+
+    .wallet{
+        min-height: 100vh;
+        height: auto;
+        padding-bottom: 3rem;
+    
+        .wallet-container{
+            width: 90vw;
+            margin: 0 auto;
+            margin-top: 2.5rem;
+    
+            .top{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                justify-content: space-between;
+    
+                .left{
+                    h3{
+                        font-size: 1.6rem;
+                        font-family: $orb;
+                    }
+    
+                    .btns{
+                        display: block;
+                        width: 100%;
+                        outline: none;
+                        border: 1px solid $whi;
+                        background: none;
+                        color: $whi;
+                        margin-top: 1rem;
+                        padding: .8rem;
+                        border-radius: 5px;
+                        font-weight: 600;
+                    }
+                    
+                    .btn2{
+                        background-color: $green;
+                        color: $bla;
+                        border: none;
+                    }
+    
+                }
+    
+                .right{
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 1.2rem;
+    
+                    .card{
+                        width: 100%;
+                        background: #33333392;
+                        padding: 1rem;
+                        border-radius: 10px;
+        
+                        .top-txt{
+                            display: flex;
+                            justify-content: space-between;
+                            p{
+                                font-size: .8rem;
+                                font-weight: 500;
+                            }
+                            .CTA{
+                                color: $green;
+                                text-decoration: none;
+                                font-size: .8rem;
+                                //font-weight: 600;
+        
+                                .icon{
+                                    font-size: 1rem;
+                                    position: relative;
+                                    top: .2rem;
+                                }
+                            }
+                        }
+        
+                        .bottom-txt{
+                            font-family: $orb;
+                            font-size: 2.2rem;
+                            letter-spacing: 2px;
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
+    
+            .tableDiv{
+                margin-top: 3rem;
+                border-radius: 10px;
+                overflow-x: auto;
+                max-width: 322px;
+
+                
+                h4{
+                    font-family: $orb;
+                    font-size: 1.2rem;
+                    margin-bottom: .4rem;
+                }
+    
+                .transaction-history-table {
+                    width: 100%;
+                    max-height: 900px; /* Set a max-height for the container */
+                    overflow-x: auto; 
+                    border-collapse: collapse;
+                    background-color: #33333372;
+                    color: #ececec;
+                    font-size: .8rem;
+                
+                    th, td {
+                    padding: 12px;
+                    border: 1px solid #55555500;
+                    text-align: start;
+                    white-space: nowrap;
+                    }
+                
+                    th {
+                    background-color: #2222226a;
+                    }
+                
+                    tbody {
+                        tr:nth-child(even) {
+                            background-color: #1919194a;
+                        }
+                
+                        tr:hover {
+                            background-color: #66666625;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <section className='header'>
+    <section className='header desktop-header'>
         <div className="logoDiv">
             <p id="logo">eco-Node</p>
         </div>

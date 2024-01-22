@@ -2,12 +2,13 @@
 import React from 'react';
 import heroVid from '../assets/vids/4.mp4'
 import Header from './Header';
+import MobNav from './MobNav';
 import { Link } from 'react-router-dom';
 
 const VideoBackground = () => {
   return (
     <div className="video-background">
-      <video autoPlay loop muted>
+      <video muted>
         <source src={heroVid} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -15,6 +16,7 @@ const VideoBackground = () => {
       {/* Add other content on top of the video if needed */}
       <div className="content">
         <Header />
+        <MobNav />
 
         <div className="inner-content">
             <h1>Eco-Node</h1>

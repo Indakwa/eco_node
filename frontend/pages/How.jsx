@@ -1,11 +1,13 @@
 import React from 'react'
 import Header from '../components/Header'
 import logVid from '../assets/vids/1.mp4'
+import MobNav from '../components/MobNav';
 
 const How = () => {
   return (
     <section className="how-section">
         <Header />
+        <MobNav />
 
         <div className="inner-how">
 
