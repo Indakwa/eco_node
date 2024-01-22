@@ -11,7 +11,7 @@ Welcome to Eco-Node - *Empowering you to take control of your carbon footprint.*
 3. [Technologies](#technologies)
 4. [Getting Started](#getting-started)
 5. [Installation](#installation)
-
+6. [The Live Website](#the-live-web)
 ## Introduction
 
 Eco-Node is a frontend canister built on the Internet Computer Protocol (ICP) using  React. It focuses on empowering users to reduce their carbon footprint and rewards eco-friendly choices with Carbon Credits. The project aims to create a bridge between environmental impact and tangible benefits, encouraging users to actively contribute to a sustainable future.
@@ -50,3 +50,7 @@ cd eco-node
 
 # Install dependencies
 npm install
+
+
+## The Live Website
+https://eco-node.netlify.app/
