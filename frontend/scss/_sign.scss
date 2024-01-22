@@ -1,6 +1,7 @@
 .signup-section, .how-section{
     background: #000;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     overflow: hidden;
 
     .inner-signup, .inner-how{
@@ -11,6 +12,7 @@
         .signup-form{
             width: 50%;
             border-right: 1px solid #ececec91;
+            padding-bottom: 3rem;
 
             h2{
                 font-size: 2rem;  
@@ -89,7 +91,7 @@
         .how-txt{
             border-left: 1px solid #ececec91;
             width: 50%;
-            padding: 5rem 10.2rem 0 4rem;
+            padding: 5rem 10.2rem 2rem 4rem;
             h6{
                 font-size: 1.3rem;
                 font-family: $orb;

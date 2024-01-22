@@ -20,11 +20,27 @@ $b: 2px solid yellow;
 $b2: 2px solid aqua;
 $b3: 2px solid white;
 
+/* For WebKit (Chrome, Safari) */
+body::-webkit-scrollbar {
+    width: 5px; /* Set the width of the scrollbar */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #2c3e50; /* Set the color of the scrollbar thumb */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #34495e; /* Set the color of the scrollbar track */
+  }
+
+
 
 body{
     font-family: $pop;
     color: $whi;
     background-color: #000;
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+    scrollbar-color: #2c3e50 #34495e;
 }
 
 @import 'vid';
