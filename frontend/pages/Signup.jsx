@@ -33,7 +33,7 @@ const Signup = () => {
                     <input type="password" id="password" name="password" placeholder='Enter your password'  required autoComplete='off'/>
 
                     <label htmlFor="password">Confirm Password:</label>
-                    <input type="password" id="password" name="password" placeholder='Confirm your password'  required autoComplete='off'/>
+                    <input type="password" id="password2" name="password" placeholder='Confirm your password'  required autoComplete='off'/>
 
                     <button type="submit" className='submit'>Sign Up</button>
                 </form>

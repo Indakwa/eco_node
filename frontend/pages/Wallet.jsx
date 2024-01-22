@@ -43,7 +43,9 @@ const Wallet = () => {
 
             <div className="tableDiv">
                 <h4>Transaction History</h4>
-                <Table />
+                <div className="table-container">
+                    <Table />
+                </div>
             </div>
         </div>
     </section>

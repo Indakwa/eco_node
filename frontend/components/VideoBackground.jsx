@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const VideoBackground = () => {
   return (
     <div className="video-background">
-      <video muted>
+      <video autoPlay loop muted>
         <source src={heroVid} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

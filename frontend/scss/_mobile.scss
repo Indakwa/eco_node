@@ -350,8 +350,7 @@
             .tableDiv{
                 margin-top: 3rem;
                 border-radius: 10px;
-                overflow-x: auto;
-                max-width: 322px;
+
 
                 
                 h4{
@@ -359,35 +358,39 @@
                     font-size: 1.2rem;
                     margin-bottom: .4rem;
                 }
-    
-                .transaction-history-table {
-                    width: 100%;
-                    max-height: 900px; /* Set a max-height for the container */
-                    overflow-x: auto; 
-                    border-collapse: collapse;
-                    background-color: #33333372;
-                    color: #ececec;
-                    font-size: .8rem;
                 
-                    th, td {
-                    padding: 12px;
-                    border: 1px solid #55555500;
-                    text-align: start;
-                    white-space: nowrap;
-                    }
-                
-                    th {
-                    background-color: #2222226a;
-                    }
-                
-                    tbody {
-                        tr:nth-child(even) {
-                            background-color: #1919194a;
+                .table-container{
+                    overflow-x: auto;
+                    max-width: 322px;
+                        
+                    .transaction-history-table {
+                        width: 100%; /* Set a max-height for the container */
+                        overflow-x: auto; 
+                        border-collapse: collapse;
+                        background-color: #33333372;
+                        color: #ececec;
+                        font-size: .8rem;
+                    
+                        th, td {
+                        padding: 12px;
+                        border: 1px solid #55555500;
+                        text-align: start;
+                        white-space: nowrap;
                         }
-                
-                        tr:hover {
-                            background-color: #66666625;
-                            cursor: pointer;
+                    
+                        th {
+                        background-color: #2222226a;
+                        }
+                    
+                        tbody {
+                            tr:nth-child(even) {
+                                background-color: #1919194a;
+                            }
+                    
+                            tr:hover {
+                                background-color: #66666625;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
