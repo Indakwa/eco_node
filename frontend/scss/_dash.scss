@@ -1,0 +1,99 @@
+.dash{
+    background-image: url(../assets/images/7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    height: 100vh;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+    .dash-container{
+        //border: $b2;
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 4rem;
+
+        .top-cards{
+            display: flex;
+            justify-content: space-between;
+            //padding: .6rem;
+            .card{
+                width: 32%;
+                background: #33333392;
+                padding: 1.2rem;
+                border-radius: 10px;
+
+                .top-txt{
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        font-size: .8rem;
+                        font-weight: 500;
+                    }
+                    .CTA{
+                        color: $green;
+                        text-decoration: none;
+                        font-size: .8rem;
+                        //font-weight: 600;
+
+                        .icon{
+                            font-size: 1rem;
+                            position: relative;
+                            top: .2rem;
+                        }
+                    }
+                }
+
+                .bottom-txt{
+                    font-family: $orb;
+                    font-size: 2.5rem;
+                    letter-spacing: 2px;
+                    margin-top: .3rem;
+                }
+            }
+        }
+
+        .mid{
+            margin-top: 1.6rem;
+            display: flex;
+            justify-content: space-between;
+
+            .left-chart{
+                width: 66.3%;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .right-chart{
+                width: 32%;
+                border-radius: 10px;
+                overflow: hidden;
+                padding-top: 3rem;
+                background: #33333392;
+
+                .circular{
+                    font-family: $orb;
+                }
+
+                h5{
+                    text-align: center;
+                    margin-top: 2.2rem;
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                    font-family: $orb;
+                }
+
+                p{
+                    text-align: center;
+                    margin-top: .3rem;
+                    color: $green;
+                }
+
+                #complete{
+                    color: $whi;
+                    font-size: .9rem;
+                }
+            }
+
+        }
+    }
+}

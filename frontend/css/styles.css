@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #ececec;
+}
+
+/* VideoBackground.css */
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.header .logoDiv #logo {
+  font-size: 1.2rem;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.header menu ul {
+  display: flex;
+  gap: 2rem;
+}
+.header menu ul li {
+  display: block;
+  list-style-type: none;
+}
+.header menu ul li .link {
+  text-decoration: none;
+  color: #ececec;
+}
+.header menu ul li .link:hover {
+  color: #67cc4a;
+}
+
+.inner-content {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+.inner-content h1 {
+  font-size: 7.7rem;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+}
+.inner-content .txt {
+  font-size: 1rem;
+  text-align: center;
+  width: 690px;
+  margin: 0 auto;
+}
+.inner-content .CTA {
+  display: block;
+  text-align: center;
+  width: 330px;
+  margin: 0 auto;
+  min-width: 50px;
+  padding: 1rem;
+  color: #ececec;
+  text-decoration: none;
+  border: 2px solid #ececec;
+  border-radius: 30px;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+.inner-content .CTA:hover {
+  transform: scale(1.06);
+}
+.inner-content .btn2 {
+  border: none;
+  background: #67cc4a;
+  color: #000713;
+}
+
+.signup-section, .how-section {
+  background: #000;
+  height: 100vh;
+  overflow: hidden;
+}
+.signup-section .inner-signup, .signup-section .inner-how, .how-section .inner-signup, .how-section .inner-how {
+  border-top: 1px solid rgba(236, 236, 236, 0.568627451);
+  display: flex;
+  margin-top: 2rem;
+}
+.signup-section .inner-signup .signup-form, .signup-section .inner-how .signup-form, .how-section .inner-signup .signup-form, .how-section .inner-how .signup-form {
+  width: 50%;
+  border-right: 1px solid rgba(236, 236, 236, 0.568627451);
+}
+.signup-section .inner-signup .signup-form h2, .signup-section .inner-how .signup-form h2, .how-section .inner-signup .signup-form h2, .how-section .inner-how .signup-form h2 {
+  font-size: 2rem;
+  width: 62%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.signup-section .inner-signup .signup-form form, .signup-section .inner-how .signup-form form, .how-section .inner-signup .signup-form form, .how-section .inner-how .signup-form form {
+  width: 62%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.signup-section .inner-signup .signup-form form label, .signup-section .inner-how .signup-form form label, .how-section .inner-signup .signup-form form label, .how-section .inner-how .signup-form form label {
+  font-size: 1rem;
+}
+.signup-section .inner-signup .signup-form form input, .signup-section .inner-how .signup-form form input, .how-section .inner-signup .signup-form form input, .how-section .inner-how .signup-form form input {
+  display: block;
+  width: 96%;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #121212;
+  outline: none;
+  border: none;
+  color: #ececec;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.signup-section .inner-signup .signup-form form input:focus, .signup-section .inner-how .signup-form form input:focus, .how-section .inner-signup .signup-form form input:focus, .how-section .inner-how .signup-form form input:focus {
+  outline: none;
+  border: 0.5px solid rgba(236, 236, 236, 0.4588235294);
+}
+.signup-section .inner-signup .signup-form form .submit, .signup-section .inner-how .signup-form form .submit, .how-section .inner-signup .signup-form form .submit, .how-section .inner-how .signup-form form .submit {
+  display: block;
+  width: 96%;
+  background: #67cc4a;
+  color: #000713;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  position: relative;
+  top: 0.8rem;
+}
+.signup-section .inner-signup .signup-form form .submit:hover, .signup-section .inner-how .signup-form form .submit:hover, .how-section .inner-signup .signup-form form .submit:hover, .how-section .inner-how .signup-form form .submit:hover {
+  outline: none;
+  border: none;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.signup-section .inner-signup .signup-video, .signup-section .inner-signup .how-video, .signup-section .inner-how .signup-video, .signup-section .inner-how .how-video, .how-section .inner-signup .signup-video, .how-section .inner-signup .how-video, .how-section .inner-how .signup-video, .how-section .inner-how .how-video {
+  position: relative;
+  width: 50%;
+  height: 90vh; /* Adjust height as needed */
+  overflow: hidden;
+}
+.signup-section .inner-signup .signup-video .video, .signup-section .inner-signup .how-video .video, .signup-section .inner-how .signup-video .video, .signup-section .inner-how .how-video .video, .how-section .inner-signup .signup-video .video, .how-section .inner-signup .how-video .video, .how-section .inner-how .signup-video .video, .how-section .inner-how .how-video .video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.signup-section .inner-signup .how-txt, .signup-section .inner-how .how-txt, .how-section .inner-signup .how-txt, .how-section .inner-how .how-txt {
+  border-left: 1px solid rgba(236, 236, 236, 0.568627451);
+  width: 50%;
+  padding: 5rem 10.2rem 0 4rem;
+}
+.signup-section .inner-signup .how-txt h6, .signup-section .inner-how .how-txt h6, .how-section .inner-signup .how-txt h6, .how-section .inner-how .how-txt h6 {
+  font-size: 1.3rem;
+  font-family: "Orbitron", sans-serif;
+  margin-bottom: 0.2rem;
+}
+.signup-section .inner-signup .how-txt p, .signup-section .inner-how .how-txt p, .how-section .inner-signup .how-txt p, .how-section .inner-how .how-txt p {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.dash {
+  background-image: url(../assets/images/7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  height: 100vh;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.dash .dash-container {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.dash .dash-container .top-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.dash .dash-container .top-cards .card {
+  width: 32%;
+  background: rgba(51, 51, 51, 0.5725490196);
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+.dash .dash-container .top-cards .card .top-txt {
+  display: flex;
+  justify-content: space-between;
+}
+.dash .dash-container .top-cards .card .top-txt p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.dash .dash-container .top-cards .card .top-txt .CTA {
+  color: #67cc4a;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.dash .dash-container .top-cards .card .top-txt .CTA .icon {
+  font-size: 1rem;
+  position: relative;
+  top: 0.2rem;
+}
+.dash .dash-container .top-cards .card .bottom-txt {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-top: 0.3rem;
+}
+.dash .dash-container .mid {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.dash .dash-container .mid .left-chart {
+  width: 66.3%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.dash .dash-container .mid .right-chart {
+  width: 32%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-top: 3rem;
+  background: rgba(51, 51, 51, 0.5725490196);
+}
+.dash .dash-container .mid .right-chart .circular {
+  font-family: "Orbitron", sans-serif;
+}
+.dash .dash-container .mid .right-chart h5 {
+  text-align: center;
+  margin-top: 2.2rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: "Orbitron", sans-serif;
+}
+.dash .dash-container .mid .right-chart p {
+  text-align: center;
+  margin-top: 0.3rem;
+  color: #67cc4a;
+}
+.dash .dash-container .mid .right-chart #complete {
+  color: #ececec;
+  font-size: 0.9rem;
+}
+
+.wallet {
+  height: 100vh;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background-image: url(../assets/images/5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+}
+.wallet .wallet-container {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.wallet .wallet-container .top {
+  display: flex;
+  justify-content: space-between;
+}
+.wallet .wallet-container .top .left h3 {
+  font-size: 3rem;
+  font-family: "Orbitron", sans-serif;
+}
+.wallet .wallet-container .top .left .btns {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 1px solid #ececec;
+  background: none;
+  color: #ececec;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.wallet .wallet-container .top .left .btns:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.wallet .wallet-container .top .left .btn2 {
+  background-color: #67cc4a;
+  color: #000713;
+  border: none;
+}
+.wallet .wallet-container .top .right {
+  display: flex;
+  width: 74%;
+  justify-content: space-between;
+}
+.wallet .wallet-container .top .right .card {
+  width: 48%;
+  background: rgba(51, 51, 51, 0.5725490196);
+  padding: 1.5rem 1.5rem;
+  border-radius: 10px;
+}
+.wallet .wallet-container .top .right .card .top-txt {
+  display: flex;
+  justify-content: space-between;
+}
+.wallet .wallet-container .top .right .card .top-txt p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.wallet .wallet-container .top .right .card .top-txt .CTA {
+  color: #67cc4a;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.wallet .wallet-container .top .right .card .top-txt .CTA .icon {
+  font-size: 1.2rem;
+  position: relative;
+  top: 0.2rem;
+}
+.wallet .wallet-container .top .right .card .bottom-txt {
+  font-family: "Orbitron", sans-serif;
+  font-size: 4.2rem;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+}
+.wallet .wallet-container .tableDiv {
+  margin-top: 4rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.wallet .wallet-container .tableDiv h4 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+.wallet .wallet-container .tableDiv .transaction-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(51, 51, 51, 0.4470588235);
+  color: #ececec;
+}
+.wallet .wallet-container .tableDiv .transaction-history-table th, .wallet .wallet-container .tableDiv .transaction-history-table td {
+  padding: 12px;
+  border: 1px solid rgba(85, 85, 85, 0);
+  text-align: start;
+}
+.wallet .wallet-container .tableDiv .transaction-history-table th {
+  background-color: rgba(34, 34, 34, 0.4156862745);
+}
+.wallet .wallet-container .tableDiv .transaction-history-table tbody tr:nth-child(even) {
+  background-color: rgba(25, 25, 25, 0.2901960784);
+}
+.wallet .wallet-container .tableDiv .transaction-history-table tbody tr:hover {
+  background-color: rgba(102, 102, 102, 0.1450980392);
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */

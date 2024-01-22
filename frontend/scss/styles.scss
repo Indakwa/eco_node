@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .5s ease;
+}
+
+$green: #67cc4a;
+$purple: #6f008a;
+$blue: #2151a6;
+$whi: #ececec;
+$bla: #000713;
+
+$orb: 'Orbitron', sans-serif;
+$pop: 'Poppins', sans-serif;
+
+$b: 2px solid yellow;
+$b2: 2px solid aqua;
+$b3: 2px solid white;
+
+
+body{
+    font-family: $pop;
+    color: $whi;
+}
+
+@import 'vid';
+
+.header{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    .logoDiv{
+        #logo{
+            font-size: 1.2rem;
+            font-family: $orb;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+    }
+
+    menu{
+        ul{
+            display: flex;
+            gap: 2rem;
+
+            li{
+                display: block;
+                list-style-type: none;
+
+                .link{
+                    text-decoration: none;
+                    color: $whi;
+
+                    &:hover{
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.inner-content{
+    //border: $b2;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 8rem;
+
+    h1{
+        font-size: 7.7rem;
+        font-family: $orb;
+        text-align: center;
+    }
+
+    .txt{
+        font-size: 1rem;
+        text-align: center;
+        width: 690px;
+        margin: 0 auto;
+    }
+
+    .CTA{
+        display: block;
+        text-align: center;
+        width: 330px;
+        margin: 0 auto;
+        min-width: 50px;
+        padding: 1rem;
+        color: $whi;
+        text-decoration: none;
+        border: 2px solid $whi;
+        border-radius: 30px;
+        margin-top: 2rem;
+        font-weight: 600;
+
+        &:hover{
+            transform: scale(1.06);
+        }
+    }
+
+    .btn2{
+        border: none;
+        background: $green;
+        color: $bla;
+    }
+}
+
+@import 'sign';
+@import 'dash';
+@import 'wallet';

@@ -1,0 +1,133 @@
+.wallet{
+    height: 100vh;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-image: url(../assets/images/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+
+    .wallet-container{
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 4rem;
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+
+            .left{
+                h3{
+                    font-size: 3rem;
+                    font-family: $orb;
+                }
+
+                .btns{
+                    display: block;
+                    width: 100%;
+                    outline: none;
+                    border: 1px solid $whi;
+                    background: none;
+                    color: $whi;
+                    margin-top: 1.5rem;
+                    padding: 1rem;
+                    border-radius: 5px;
+                    font-weight: 600;
+                    
+
+                    &:hover{
+                        transform: scale(1.03);
+                        cursor: pointer;
+                    }
+                }
+
+                .btn2{
+                    background-color: $green;
+                    color: $bla;
+                    border: none;
+                }
+            }
+
+            .right{
+                display: flex;
+                width: 74%;
+                justify-content: space-between;
+
+                .card{
+                    width: 48%;
+                    background: #33333392;
+                    padding: 1.5rem 1.5rem;
+                    border-radius: 10px;
+    
+                    .top-txt{
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                            font-size: 1rem;
+                            font-weight: 500;
+                        }
+                        .CTA{
+                            color: $green;
+                            text-decoration: none;
+                            font-size: 1rem;
+                            //font-weight: 600;
+    
+                            .icon{
+                                font-size: 1.2rem;
+                                position: relative;
+                                top: .2rem;
+                            }
+                        }
+                    }
+    
+                    .bottom-txt{
+                        font-family: $orb;
+                        font-size: 4.2rem;
+                        letter-spacing: 2px;
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+
+        .tableDiv{
+            margin-top: 4rem;
+            border-radius: 10px;
+            overflow: hidden;
+            
+            h4{
+                font-family: $orb;
+                font-size: 2rem;
+                margin-bottom: .8rem;
+            }
+
+            .transaction-history-table {
+                width: 100%;
+                border-collapse: collapse;
+                background-color: #33333372;
+                color: #ececec;
+            
+                th, td {
+                padding: 12px;
+                border: 1px solid #55555500;
+                text-align: start;
+                }
+            
+                th {
+                background-color: #2222226a;
+                }
+            
+                tbody {
+                    tr:nth-child(even) {
+                        background-color: #1919194a;
+                    }
+            
+                    tr:hover {
+                        background-color: #66666625;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+        }
+    }
+}
